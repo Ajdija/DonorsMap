@@ -1,0 +1,43 @@
+
+{
+  "name": "donorsassessment",
+  "description": "Connects donors and patients worldwide",
+  "homepage": "http://meanjs.org/",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-animate": "~1.5.0",
+    "angular-bootstrap": "~1.2.1",
+    "angular-messages": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "angular-resource": "~1.5.0",
+    "angular-ui-router": "~0.2.18",
+    "angular-esri-map": "~2.0.0",
+    "bootstrap": "~3.3.6",
+    "dojo-bootstrap": "~3.0.2",
+    "calcite-maps": "https://github.com/Esri/calcite-maps.git#a744432c37961746830a6fcd1a67314c28bcf40a",
+    "esri": "arcgis-js-api#4.1.0",
+    "jquery": "~3.1.1",
+    "ng-file-upload": "^12.1.0",
+    "ng-img-crop": "ngImgCrop#^0.3.2",
+    "owasp-password-strength-test": "~1.3.0",
+    "requirejs": "~2.3.2"
+  },
+  "resolutions": {
+    "dojo": "v1.11.2/esri-3.18.0",
+    "dijit": "v1.11.2/esri-3.18.0",
+    "dojox": "v1.11.2/esri-3.18.0"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/css/bootstrap-theme.css",
+        "less/bootstrap.less"
+      ]
+    },
+    "jquery": {
+      "main": []
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<div class="web-gl-warning" ng-show="$ctrl.showViewError">
+  WebGL is not supported on your platform/browser. Thus we cannot display Donors map for you. Sorry.
+</div>
+<esri-map-view map="$ctrl.map" on-create="$ctrl.onViewCreated"
+               on-error="$ctrl.onViewError"
+               ng-hide="$ctrl.showViewError"
+               view-options="{
+                      extent: {
+                          xmin: -9177811,
+                          ymin: 4247000,
+                          xmax: -9176791,
+                          ymax: 4247784,
+                          spatialReference: 102100
+                      }
+                 }"
+></esri-map-view>
+<div id="donorpin-create-popup-placeholder"></div>

@@ -1,0 +1,26 @@
+html, body, .esri-view {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.resultsDiv {
+	background-color: white;
+	border-radius: 8px;
+	font-size: 0.9em;
+	opacity: 0.75;
+	padding: 10px;
+}
+
+.esri-view{
+	height: 100vh;
+	min-height: 100%;
+	width: 100%;
+}
+
+.vcenter {
+	display: inline-block;
+	float: none;
+	vertical-align: middle;
+}

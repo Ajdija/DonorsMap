@@ -1,0 +1,92 @@
+<section>
+  <div class="page-header">
+    <h1>{{$ctrl.donorpin._id ? 'Edit Donorpin' : 'Create new donor pin'}}</h1>
+  </div>
+  <div class="col-md-12">
+    <form name="$ctrl.form.donorpinForm" class="form-horizontal"
+          ng-submit="$ctrl.save($ctrl.form.donorpinForm.$valid, $ctrl.donorpin)"
+          novalidate>
+      <fieldset>
+        <div class="form-group" show-errors>
+          <label class="control-label" for="firstname">First Name</label>
+          <input name="firstname" type="text" ng-model="$ctrl.donorpin.firstname" id="firstname" class="form-control"
+                 placeholder="First Name" required>
+          <div ng-messages="$ctrl.form.donorpinForm.firstname.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">First name is required</p>
+          </div>
+
+        </div>
+
+        <div class="form-group" show-errors>
+          <label class="control-label" for="lastname">Last Name</label>
+          <input name="lastname" type="text" ng-model="$ctrl.donorpin.lastname" id="lastname" class="form-control"
+                 placeholder="Last Name" required>
+          <div ng-messages="$ctrl.form.donorpinForm.lastname.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Last name is required</p>
+          </div>
+
+        </div>
+
+        <div class="form-group" show-errors>
+          <label class="control-label" for="contactnumber">Contact Number</label>
+          <input name="contactnumber" type="text" ng-model="$ctrl.donorpin.contactnumber" id="contactnumber"
+                 class="form-control" placeholder="Contact Number" required>
+          <div ng-messages="$ctrl.form.donorpinForm.contactnumber.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Contact number is required</p>
+          </div>
+
+        </div>
+
+        <div class="form-group" show-errors>
+          <label class="control-label" for="emailaddress">Email Address</label>
+          <input name="emailaddress" type="text" ng-model="$ctrl.donorpin.emailaddress" id="emailaddress"
+                 class="form-control" placeholder="Email Address" required>
+          <div ng-messages="$ctrl.form.donorpinForm.emailaddress.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Email Address is required</p>
+          </div>
+
+        </div>
+
+        <div class="form-group" show-errors>
+          <label class="control-label" for="bloodgroup">Blood Group</label>
+          <input name="bloodgroup" type="text" ng-model="$ctrl.donorpin.bloodgroup" id="bloodgroup" class="form-control"
+                 placeholder="Blood Group" required>
+          <div ng-messages="$ctrl.form.donorpinForm.bloodgroup.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Blood Group is required</p>
+          </div>
+
+        </div>
+
+        <div class="form-group" show-errors>
+          <div id="longitude-box">
+            <label class="control-label" for="longitude">Longitude</label>
+            <input name="longitude" type="text" ng-model="$ctrl.donorpin.longitude" id="longitude" class="form-control"
+                   placeholder="Longitude" required>
+            <div ng-messages="$ctrl.form.donorpinForm.longitude.$error" role="alert">
+              <p class="help-block error-text" ng-message="required">Longitude is required</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-group" show-errors>
+          <div id="latitude-box">
+            <label class="control-label" for="latitude">Latitude</label>
+            <input name="latitude" type="text" ng-model="$ctrl.donorpin.latitude" id="latitude" class="form-control"
+                   placeholder="Latitude" required>
+            <div ng-messages="$ctrl.form.donorpinForm.latitude.$error" role="alert">
+              <p class="help-block error-text" ng-message="required">Latitude is required</p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">{{$ctrl.donorpin._id ? 'Update' : 'Create'}}</button>
+        </div>
+        <div ng-show="$ctrl.error" class="text-danger">
+          <strong ng-bind="$ctrl.error"></strong>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>
+
