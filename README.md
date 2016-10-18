@@ -13,7 +13,25 @@ Create app that will provide a bridge between patients and donors.
 Please see Design.pdf
 
 ## Screenshots
+Homepage View
 
+![Screenshot](https://cloud.githubusercontent.com/assets/7486241/19486258/1b7c8aca-955e-11e6-8fef-9198700061d5.png)
+
+Create Donor Pin popup 
+
+![Screenshot](https://cloud.githubusercontent.com/assets/7486241/19486498/f082bc1c-955e-11e6-8178-c9292cdb4370.png)
+
+Confimation with edit donor pin link
+
+![Screenshot](https://cloud.githubusercontent.com/assets/7486241/19486260/1b855650-955e-11e6-9683-f09e9da81555.png)
+
+Edit donor pin subpage
+
+![Screenshot](https://cloud.githubusercontent.com/assets/7486241/19486471/d752dc2c-955e-11e6-847a-2430e8acc53e.png)
+
+Full width Homepage view with Donor pin information popup
+
+![Screenshot](https://cloud.githubusercontent.com/assets/7486241/19486248/0feb7a18-955e-11e6-82d0-883541382a42.png)
 
 
 ## Prerequisites
@@ -55,14 +73,12 @@ $ npm install gulp -g
 ## Installing application
 
 ```bash
-$ cd Client/app
 $ npm install
 ```
 
 ## Running application
 
 ```bash
-$ cd Client/app
 $ npm start
 ```
 
